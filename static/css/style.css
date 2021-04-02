@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+
+section {
+
+	border: 1px solid #000;
+	height: 100px;
+	width: 400px;
+	margin: 40px auto;
+}
+
+
+section h1 {
+	background-color: #990000;
+	color: #FFF;
+	font-size: 1.2em;
+	left: -10px;
+	padding: 5px 0;
+	position: relative;
+	text-align: center;
+	width: 420px;
+}
+
+section h1::before {
+	border-color: transparent #7C0000 #7C0000 transparent;
+	border-style: solid;
+	border-width: 5px;
+	content: "";
+	left: 0;
+	position: absolute;
+	top: -10px;
+}
+
+section h1::after {
+	border-color: transparent transparent #7C0000 #7C0000 ;
+	border-style: solid;
+	border-width: 5px;
+	content: "";
+	right: 0;
+	position: absolute;
+	top: -10px;
+}
