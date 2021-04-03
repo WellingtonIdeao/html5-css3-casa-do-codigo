@@ -117,4 +117,64 @@ blockquote::after{
 	font-size: 0.9em;
 }
 
+@font-face {
+	font-family: 'Lobster';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lobster'), url('../fonts/lobster-v23-latin-regular.woff') format('woff');
+}
 
+@font-face {
+	font-family: 'Icons';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/open-iconic.woff') format('woff');
+}
+
+
+h1 {
+	font-family: "Lobster";
+}
+
+h2 {
+	font-family: 'Press Start 2P';
+}
+
+.icon-next {
+	color:blue;
+	font-family: 'Icons'
+}
+
+.icon-next::after {
+	content: '\2192';
+	margin-left: 10px;
+
+}
+
+.icon-next-page {
+	font-weight: bold;
+}
+.icon-next-page::after {
+	content: '\2192';
+	font-family: 'Icons';
+	margin-left: 10px;
+}
+
+.icon-ok {
+	color: #489D00;
+}
+
+.icon-ok::before {
+	content: '\2714';
+	font-family: 'Icons';
+	margin-right: 10px;
+}
+
+.icon-invalid {
+	color: #990000;
+}
+.icon-invalid::before {
+	content: '\2718';
+	font-family: 'Icons';
+	margin-right: 10px;
+}	
