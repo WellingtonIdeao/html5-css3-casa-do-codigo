@@ -54,7 +54,10 @@ section h1::after {
 	padding: 10px;
 	position: relative;
 	width: 300px;
-	margin: 0 auto;
+	margin: 0 10px;
+	box-shadow:  3px 3px 3px #AAA;
+	float: left;
+	display: inline-block;
 
 }
 
@@ -256,6 +259,7 @@ li:last-child {
 	margin-bottom: 10px;
 	padding: 5px;
 	text-align: center;
+	float: left;
 }
 
 .blue {
@@ -273,4 +277,48 @@ li:last-child {
 background-image: linear-gradient(#F5B951 48%, #F2A31C 56%);
 }
 
+.clear {
+	clear: both;
+}
 
+input {
+	border: 1px solid #999;
+	box-shadow: 2px 2px 2px rgba(0,0,0, 0.25) inset;
+	padding: 2px 5px;
+}
+
+input:focus {
+	border-color: #35861B;
+	box-shadow: 0 0 5px #35861B, 2px 2px 2px rgba(0,0,0, 0.25) inset;
+	outline: none;
+}
+
+.nav {
+	margin-top: 5px;
+	background-color: #B9522D;
+	height: 30px;
+	list-style:none;
+	padding: 0;
+	width: 210px;
+}
+.nav li {
+	float: left;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	width: 70px;
+	text-align: center;
+}
+.nav a {
+	color: white;
+}
+
+.nav .current {
+	background-color: #A64A28;
+	box-shadow: 0 0  10px rgba(0,0,0, 0.5) inset;
+}
+
+.nav li:hover {
+	background-color: #A64A28;
+	box-shadow: 0 0  10px rgba(0,0,0, 0.5) inset;	
+}
