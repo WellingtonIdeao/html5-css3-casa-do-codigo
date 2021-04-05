@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="static/css/struct.css">
 		<script type="text/javascript" src="static/js/prefixfree.min.js"></script>
+		<script type="text/javascript" src="static/js/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -29,6 +30,28 @@
 				<p>
 					Em 2005, aos 27 anos, o jovem Ted Mosby (Josh Radnor), após o seu melhor amigo, Marshall Eriksen (Jason Segel), ficar noivo,decide finalmente ir em busca da sua cara-metade. Com gestos românticos questionáveis, Ted conhece Robin Scherbatsky (Cobie Smulders), no bar que costumavam frequentar,Maclaren's Pub.
 				</p>
+
+				 <div class="notice">
+				 	<h1>Atenção</h1>
+					<p>
+						Aqui você pode exibir alguma mensagem importante, que ela irá sobrepor todo o conteúdo do seu site.
+					</p>
+					<a href="javascript:;" class="close">Fechar</a>
+				</div>
+				<div class='overlay'></div>
+				<a id="show-modal" href="javascript:;">Exibir modal</a>
+				
+				<script type="text/javascript">
+					$('#show-modal').on('click', function() {
+						$('.overlay, .notice').show();
+					});
+				</script>
+				<script type="text/javascript">
+					$('.overlay, .close').on('click', function() {
+						$('.overlay, .notice').hide();
+					});
+				</script>
+					
 			</section>
 		</div>
 	</body>
