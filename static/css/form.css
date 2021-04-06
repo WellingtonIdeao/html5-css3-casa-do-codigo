@@ -50,6 +50,7 @@ input {
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 	font-size: 0.8em;
 	padding: 5px;
+	font-weight: bold;
 }
 input[type="password"]{
 	border-radius: 0 0 3px 3px;
@@ -70,8 +71,6 @@ button {
 	margin: 5px 0 0 90px;
 }
 
-
-
  .clearfix::before, .clearfix::after {
 	content: "";
 	display: table;
@@ -81,4 +80,36 @@ button {
 }
 .clearfix {
 	*zoom: 1;
+}
+
+/*pseudo seletor de 3 navegadores para estilizar o campo do input placeholder*/
+
+/*navegadores WebKit - como Safari e o Google Chrome*/
+::-webkit-input-placeholder {
+	color: #666;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/*navegadores Mozilla*/ 
+::-moz-placeholder {
+	color: #666;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/*navegador Internet Explorar/Microsoft*/
+-ms-input-placeholder {
+	color: #666;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* estilos aplicados ao form para quando o navegador não tiver suport a placeholder*/
+.no-placeholder input {
+border-radius: 3px;
+border-top: 1px solid #999;
+}
+.no-placeholder label {
+display: block;
 }

@@ -6,6 +6,19 @@
 	<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="static/css/form.css">
 	<script type="text/javascript" src="static/js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="static/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function($)) {
+			function supportsPlaceholder() {
+				return 'placeholder' in document.createElement('input') &&
+				'placeholder' in document.createElement('textarea');
+			}
+			
+		}
+		if(!supportsPlaceholder()) {
+			$('html').addClass('no-placeholder');
+		}
+	</script>
 </head>
 <body>
 	<div class="container">
