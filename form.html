@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario HMTL5</title>
+	<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="static/css/form.css">
+	<script type="text/javascript" src="static/js/prefixfree.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Formulario</h1>
+		</header>
+		<section>
+			<form method="post" action="">
+				<p>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="seudominio@dominio.com" autofocus="">
+					<span class="hint">por exemplo, seudominio@dominio.com.</span>
+					<span class='error'>Preencha o seu e-mail corretamente.</span>
+				</p>
+				<p>
+					<label for="subject">Assunto:</label>
+					<input type="text" id="subject" name="subject" placeholder="nos diga qual seu problema ou ideia">
+					<span class="hint">nos diga qual seu problema ou ideia.</span>
+					<span class='error'>Preencha o seu assunto corretamente.</span>
+				</p>
+				<p>
+					<label for="content">Mensagem</label>
+					<textarea id="content" name="content" placeholder="escreva a sua mensagem, em até 500 caracteres"></textarea>
+					<span class="hint">escreva a sua mensagem, em até 500 caracteres.</span>
+					<span class='error'>Preencha a sua mensagem corretamente.</span>
+				</p>
+				<button>Enviar mensagem</button>
+			</form>
+
+			<form method="post" action="">
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" placeholder="Username">	
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" placeholder="Password">
+				<button>Entrar no site</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
