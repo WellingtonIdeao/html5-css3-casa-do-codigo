@@ -50,17 +50,19 @@ li:nth-child(odd) { /* odd = impar */
 li:hover { 
 	transform: scale(1.3);
 	z-index: 1; /*vai posicionar a foto em cima das demais / defini a ordem de enpilhamento do elemento*/
+	transition: transform 0.2s linear;
 }
 
-/*  distorcendo as fotos com screw */
+/*  distorcendo as fotos com screw
 li {
 	transform: skew(10deg, 10deg);
 }
 
-/* movendo a posição das fotos no eixo-y com translate*/
+movendo a posição das fotos no eixo-y com translate
 li:nth-child(even) {
 	transform: translateY(10px);
 }
 li:nth-child(odd) {
 	transform: translateY(-10px);
 }
+*/
